@@ -1,102 +1,80 @@
-# CodeIgniter 4 Development
+<!-- README ini dihasilkan otomatis oleh workflow .github/workflows/generate-readme.yml -->
+<!-- Jangan edit manual; perubahan akan ditim pada run berikutnya. -->
 
-> **Created by Antono**
+<h1 align="center">Project 👋</h1>
 
+<p align="center">
+  <strong></strong>
+</p>
 
-[![Build Status](https://github.com/codeigniter4/CodeIgniter4/workflows/PHPUnit/badge.svg)](https://github.com/codeigniter4/CodeIgniter4/actions?query=workflow%3A%22PHPUnit%22)
-[![Coverage Status](https://coveralls.io/repos/github/codeigniter4/CodeIgniter4/badge.svg?branch=develop)](https://coveralls.io/github/codeigniter4/CodeIgniter4?branch=develop)
-[![Downloads](https://poser.pugx.org/codeigniter4/framework/downloads)](https://packagist.org/packages/codeigniter4/framework)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/codeigniter4/CodeIgniter4)](https://packagist.org/packages/codeigniter4/framework)
-[![GitHub stars](https://img.shields.io/github/stars/codeigniter4/CodeIgniter4)](https://packagist.org/packages/codeigniter4/framework)
-[![GitHub license](https://img.shields.io/github/license/codeigniter4/CodeIgniter4)](https://github.com/codeigniter4/CodeIgniter4/blob/develop/LICENSE)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/codeigniter4/CodeIgniter4/pulls)
-<br>
+<p align="center">
+  <a href="https://github.com/antono4/CodeIgniter4"><img alt="GitHub repo" src="https://img.shields.io/badge/GitHub-antono4/CodeIgniter4-blue?logo=github"></a>
+  <a href="https://antono4.github.io/CodeIgniter4/"><img alt="Live Demo" src="https://img.shields.io/badge/Live%20Demo-Online-success?logo=githubpages"></a>
+  <img alt="Files" src="https://img.shields.io/badge/Files-1170-informational">
+  <img alt="Updated" src="https://img.shields.io/badge/Updated-2026-08-13 13:09:09 WIB-lightgrey">
+</p>
 
-## What is CodeIgniter?
+---
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](http://codeigniter.com).
+## 📖 Tentang
 
-This repository holds the source code for CodeIgniter 4 only.
-Version 4 is a complete rewrite to bring the quality and the code into a more modern version,
-while still keeping as many of the things intact that has made people love the framework over the years.
+Repository **`CodeIgniter4`** adalah situs web pribadi / portofolio yang diterbitkan melalui **GitHub Pages**. Situs utama berada di [`https://antono4.github.io/CodeIgniter4/`](https://antono4.github.io/CodeIgniter4/).
 
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
+## 🗂️ Struktur Proyek
 
-### Documentation
+```
+CodeIgniter4/
+├── index.html          # Halaman utama (landing / portofolio)
+├── assets/             # Aset statis (css, js, img, vendor)
+├── forms/               # Form handler (PHP)
+└── app/              # 403 Forbidden  ->  https://antono4.github.io/CodeIgniter4/app/
+└── system/              # 403 Forbidden  ->  https://antono4.github.io/CodeIgniter4/system/
+```
 
-The [User Guide](https://codeigniter4.github.io/userguide/) is the primary documentation for CodeIgniter 4.
+## 🌐 Sub-Proyek / Demo
 
-The current **in-progress** User Guide can be found [here](https://codeigniter4.github.io/CodeIgniter4/).
-As with the rest of the framework, it is a work in progress, and will see changes over time to structure, explanations, etc.
+Situs ini juga memuat beberapa sub-proyek (masing-masing punya `index.html` tersendiri):
 
-You might also be interested in the [API documentation](https://codeigniter4.github.io/api/) for the framework components.
+| Folder | Demo Live | Keterangan |
+|--------|-----------|-----------|
+| [`app`](./app) | [https://antono4.github.io/CodeIgniter4/app/](https://antono4.github.io/CodeIgniter4/app/) | 403 Forbidden |
+| [`system`](./system) | [https://antono4.github.io/CodeIgniter4/system/](https://antono4.github.io/CodeIgniter4/system/) | 403 Forbidden |
 
-## Important Change with index.php
+## 🛠️ Teknologi
 
-index.php is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+Berdasarkan isi repository, proyek ini menggunakan:
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+- `HTML`
+- `CSS`
+- `SCSS`
+- `JavaScript`
+- `PHP`
+- `Python`
 
-**Please** read the user guide for a better explanation of how CI4 works!
+> Total **1170 file** terdeteksi di repository.
 
-## Repository Management
+## 🚀 Menjalankan Secara Lokal
 
-CodeIgniter is developed completely on a volunteer basis. As such, please give up to 7 days
-for your issues to be reviewed. If you haven't heard from one of the team in that time period,
-feel free to leave a comment on the issue so that it gets brought back to our attention.
+Karena ini situs statis (HTML/CSS/JS/PHP), cukup buka `index.html` di browser, atau jalankan server lokal:
 
-We use Github issues to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+```bash
+# Tanpa dependency
+python3 -m http.server 8000
+# lalu buka http://localhost:8000
 
-If you raise an issue here that pertains to support or a feature request, it will
-be closed! If you are not sure if you have found a bug, raise a thread on the forum first -
-someone else may have encountered the same thing.
+# atau dengan PHP (untuk form handler di forms/)
+php -S localhost:8000
+```
 
-Before raising a new Github issue, please check that your bug hasn't already
-been reported or fixed.
+## 📬 Kontak
 
-We use pull requests (PRs) for CONTRIBUTIONS to the repository.
-We are looking for contributions that address one of the reported bugs or
-approved work packages.
+- GitHub: [antono4](https://github.com/antono4)
+- Situs: [https://antono4.github.io/CodeIgniter4/](https://antono4.github.io/CodeIgniter4/)
 
-Do not use a PR as a form of feature request.
-Unsolicited contributions will only be considered if they fit nicely
-into the framework roadmap.
-Remember that some components that were part of CodeIgniter 3 are being moved
-to optional packages, with their own repository.
+## 📄 Lisensi
 
-## Contributing
+Lihat berkas [`LICENSE`](./LICENSE) untuk informasi lisensi.
 
-We **are** accepting contributions from the community!
+---
 
-We will try to manage the process somewhat, by adding a ["help wanted" label](https://github.com/codeigniter4/CodeIgniter4/labels/help%20wanted) to those that we are
-specifically interested in at any point in time. Join the discussion for those issues and let us know
-if you want to take the lead on one of them.
-
-At this time, we are not looking for out-of-scope contributions, only those that would be considered part of our controlled evolution!
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the user guide.
-
-## Server Requirements
-
-PHP version 7.3 or higher is required, with the following extensions installed:
-
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- xml (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
-
-## Running CodeIgniter Tests
-
-Information on running the CodeIgniter test suite can be found in the [README.md](tests/README.md) file in the tests directory.
+<sub>README ini di-generate otomatis pada **2026-08-13 13:09:09 WIB** oleh GitHub Actions .</sub>
