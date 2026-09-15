@@ -1,1 +1,30 @@
-Last updated: 2026-09-15 19:53:15 WIB
+# CodeIgniter4
+
+
+
+## 📋 Overview
+
+This repository contains **1174 files** and is built with the following technologies:
+
+PHP
+
+## 🚀 Quick Start
+
+```bash
+php -S localhost:8000
+```
+
+## ✨ Features
+
+- 📝 Auto-generated documentation
+
+## 🛠️ Technologies
+
+PHP
+
+## 📄 License
+
+MIT License
+
+---
+*Last updated: 2026-09-15 21:46:40 WIB*
